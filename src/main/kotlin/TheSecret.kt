@@ -20,12 +20,13 @@ class TheSecret {
     private val listOfWords = File(this::class.java.getResource("/wordList")!!.toURI())
 
     fun find() {
-        val filteredList = discardImpossibleWords(listOfWords)
-
+        println("Removing invalid words...")
+        val filteredList = discardInvalidWords(listOfWords)
+        println("Starting combinations...")
         findEasyAndMediumAnagrams(filteredList)
     }
 
-    private fun discardImpossibleWords(words: File): ArrayList<String> {
+    private fun discardInvalidWords(words: File): ArrayList<String> {
         val possibleWords: ArrayList<String> = ArrayList()
         words.forEachLine { word ->
             // Discarding words with single quotes right away
