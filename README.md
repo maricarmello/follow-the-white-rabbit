@@ -31,3 +31,7 @@ The second step is to iterate over the filtered list of words creating combinati
 
 The last step is to hash this possible combination of words and compare it to the given hashes.
 
+## How to start
+Run with gradle
+
+* `./gradlew run`
