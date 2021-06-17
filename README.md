@@ -12,10 +12,10 @@ This project is the solution for the [Follow the white rabbit][] coding challeng
 
 ## Performance
 
-* Solves the easy secret phrase in about 1 minute.
+* Solves the easy secret phrase in about 1.5 minutes.
     * `printout stout yawls`
 
-* Solves the medium secret phrase in about 3 minutes.
+* Solves the medium secret phrase in about 4 minutes.
     * `ty outlaws printouts`
 
 ## Implementation Details
